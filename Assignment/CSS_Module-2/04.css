@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 0vh;
+    width: auto;
+    
+}
+.waves svg{
+    position: relative;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+.content-head{
+    font-weight: 900;
+    font-size: 2em;
+    color: red;
+}
+.content-para{
+    font-size: 13px;
+    color: black;
+}
+.f-border,.s-border{
+    width: 70px;
+    border-bottom: 2px solid #880808;
+}
+.border{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.circle{
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-1{
+    top:326px;
+    left: 300px;
+}
+.c-2{
+    top:325px;
+    left: 500px;
+}
+.c-3{
+    top:340px;
+    left: 700px;
+}
+.c-4{
+    top:365px;
+    left: 900px;
+}
+.c-5{
+    top:366px;
+    left: 1100px;
+}
+.circle:hover{
+    height: 50px;
+    width: 50px;
+}
+.c-1:hover + .d-block{
+    display: block;
+}
+.d-block{
+    position: absolute;
+    display: none;
+    top:380px;
+    left: 227px;
+}
+.web-para{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #b40404;
+}
+.para{
+    font-size: 13px; 
+    text-align: center;
+}
+.b-para{
+    height: 50px;
+    border-left: 2px solid crimson;
+    margin-left: 95px;
+    margin-bottom: 20px;
+}
