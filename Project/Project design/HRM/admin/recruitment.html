@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment & Interview - Administrator Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="manage-employee.html">Manage Employee</a></li>
+                <li><a href="leave-management.html">Leave Management</a></li>
+                <li><a href="manage-payroll.html">Manage Payroll</a></li>
+                <li><a href="maintain-templates.html">Maintain Templates</a></li>
+                <li><a href="recruitment.html" class="active">Recruitment & Interview</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Recruitment & Interview Status</h1>
+        <div class="page-content">
+            <h2>Open Positions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Department</th>
+                        <th>Applications</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senior Developer</td>
+                        <td>IT</td>
+                        <td>15</td>
+                        <td>Interviewing</td>
+                        <td>
+                            <button class="btn">View Details</button>
+                            <button class="btn btn-warning">Close Position</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marketing Specialist</td>
+                        <td>Marketing</td>
+                        <td>8</td>
+                        <td>Accepting Applications</td>
+                        <td>
+                            <button class="btn">View Details</button>
+                            <button class="btn btn-warning">Close Position</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-content">
+            <h2>Schedule Interview</h2>
+            <form>
+                <div class="form-group">
+                    <label for="candidate">Candidate Name:</label>
+                    <input type="text" id="candidate" name="candidate" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select Position</option>
+                        <option value="senior-dev">Senior Developer</option>
+                        <option value="marketing-specialist">Marketing Specialist</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interview-date">Interview Date:</label>
+                    <input type="date" id="interview-date" name="interview-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="interview-time">Interview Time:</label>
+                    <input type="time" id="interview-time" name="interview-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="interviewer">Interviewer:</label>
+                    <input type="text" id="interviewer" name="interviewer" required>
+                </div>
+                <button type="submit" class="btn">Schedule Interview</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Administrator Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

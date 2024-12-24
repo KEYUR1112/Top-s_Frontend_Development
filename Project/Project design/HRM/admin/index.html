@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="manage-employee.html">Manage Employee</a></li>
+                <li><a href="leave-management.html">Leave Management</a></li>
+                <li><a href="manage-payroll.html">Manage Payroll</a></li>
+                <li><a href="maintain-templates.html">Maintain Templates</a></li>
+                <li><a href="recruitment.html">Recruitment & Interview</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Administrator Dashboard</h1>
+        <div class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Employee Overview</h3>
+                <div class="stat">
+                    <span class="stat-label">Total Employees:</span>
+                    <span class="stat-value">150</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">New Hires This Month:</span>
+                    <span class="stat-value">5</span>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Leave Requests</h3>
+                <div class="stat">
+                    <span class="stat-label">Pending Requests:</span>
+                    <span class="stat-value">8</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Approved This Week:</span>
+                    <span class="stat-value">12</span>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Payroll Summary</h3>
+                <div class="stat">
+                    <span class="stat-label">Next Payroll Date:</span>
+                    <span class="stat-value">July 31, 2023</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Total Payroll Amount:</span>
+                    <span class="stat-value">$450,000</span>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <h3>Recruitment Status</h3>
+                <div class="stat">
+                    <span class="stat-label">Open Positions:</span>
+                    <span class="stat-value">6</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Interviews Scheduled:</span>
+                    <span class="stat-value">10</span>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-grid">
+            <a href="manage-employee.html" class="dashboard-card">
+                <h3>Manage Employee</h3>
+                <p>Register, update, and delete employee details.</p>
+            </a>
+            <a href="leave-management.html" class="dashboard-card">
+                <h3>Leave Management</h3>
+                <p>Approve or disapprove employee leave requests.</p>
+            </a>
+            <a href="manage-payroll.html" class="dashboard-card">
+                <h3>Manage Payroll</h3>
+                <p>Handle increments, decrements, and promotions.</p>
+            </a>
+            <a href="maintain-templates.html" class="dashboard-card">
+                <h3>Maintain Templates</h3>
+                <p>Manage message templates and payslip formats.</p>
+            </a>
+            <a href="recruitment.html" class="dashboard-card">
+                <h3>Recruitment & Interview Status</h3>
+                <p>Track candidate interviews and recruitment progress.</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Administrator Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

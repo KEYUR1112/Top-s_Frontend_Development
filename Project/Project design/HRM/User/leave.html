@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management - Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leave.html">Leave Management</a></li>
+                <!-- Add other navigation items -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Leave Management</h2>
+        <h3>Apply for Leave</h3>
+        <form>
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="reason">Reason:</label>
+            <textarea id="reason" name="reason" required></textarea>
+
+            <button type="submit">Apply for Leave</button>
+        </form>
+
+        <h3>Leave Status</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Reason</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023-05-01</td>
+                    <td>2023-05-03</td>
+                    <td>Personal</td>
+                    <td>Approved</td>
+                </tr>
+                <tr>
+                    <td>2023-06-15</td>
+                    <td>2023-06-16</td>
+                    <td>Medical</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2023 Employee Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

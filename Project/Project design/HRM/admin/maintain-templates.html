@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintain Templates - Administrator Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="manage-employee.html">Manage Employee</a></li>
+                <li><a href="leave-management.html">Leave Management</a></li>
+                <li><a href="manage-payroll.html">Manage Payroll</a></li>
+                <li><a href="maintain-templates.html" class="active">Maintain Templates</a></li>
+                <li><a href="recruitment.html">Recruitment & Interview</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Maintain Templates</h1>
+        <div class="page-content">
+            <h2>Email Templates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Template Name</th>
+                        <th>Description</th>
+                        <th>Last Modified</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Welcome Email</td>
+                        <td>Sent to new employees</td>
+                        <td>2023-07-15</td>
+                        <td>
+                            <button class="btn btn-warning">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Leave Approval</td>
+                        <td>Sent when leave is approved</td>
+                        <td>2023-07-10</td>
+                        <td>
+                            <button class="btn btn-warning">Edit</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-content">
+            <h2>Create New Template</h2>
+            <form>
+                <div class="form-group">
+                    <label for="template-name">Template Name:</label>
+                    <input type="text" id="template-name" name="template-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="template-type">Template Type:</label>
+                    <select id="template-type" name="template-type" required>
+                        <option value="">Select Type</option>
+                        <option value="email">Email</option>
+                        <option value="payslip">Payslip</option>
+                        <option value="notification">Notification</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="template-content">Template Content:</label>
+                    <textarea id="template-content" name="template-content" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn">Create Template</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Administrator Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
